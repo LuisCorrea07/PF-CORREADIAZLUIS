@@ -2,11 +2,11 @@ let opcionMenu = 0;
 let resultado =0;
 
 function calcularInteresDia(capitalInicial,tasa, periodo){
-  interes = (capitalInicial*tasa*periodo)/(100*periodo);
-  return interesGanado = interes*periodo;
+  return interes = (capitalInicial*tasa*periodo)/(100*periodo);
+ 
 }
-function interesADevolver(capitalInicial, interesGanado){
-     return aDevolver = capitalInicial + interesGanado;
+function interesADevolver(capitalInicial, interes){
+     return aDevolver = capitalInicial + interes;
 }
 
 function mensajeDespedida(){
@@ -14,7 +14,7 @@ function mensajeDespedida(){
 }
 
 function mostrarResultado(resultado){
-    alert(`Tu resultado es: ${resultado}`);
+    alert(`Usted debe devolver $:${resultado}`);
 }
 
 
@@ -33,7 +33,7 @@ while(opcionMenu !=5){
            mostrarResultado(resultado);
         break;
         case '2':
-            interesTotal = calcularInteresDia(capitalInicial,tasa, 7);
+            interesTotal = calcularInteresDia(capitalInicial,tasa,7);
             resultado = interesADevolver(capitalInicial, interesTotal);
             mostrarResultado(resultado)
         break;
@@ -43,7 +43,7 @@ while(opcionMenu !=5){
             mostrarResultado(resultado);
         break;
         case '4':
-           interesTotal = calcularInteresDia(capitalInicial,tasa, 30);
+           interesTotal = calcularInteresDia(capitalInicial,tasa,30);
            resultado = interesADevolver(capitalInicial, interesTotal);
            mostrarResultado(resultado);
         break;
