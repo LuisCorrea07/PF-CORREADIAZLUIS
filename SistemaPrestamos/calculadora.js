@@ -1,10 +1,20 @@
 let opcionMenu = 0;
 let resultado =0;
+const arrInteresGanado = []; //creo un array vacio
+const arrCapital = [];
+
+function cargaCapital(capitalInicial){
+    arrCapital.push(capitalInicial);
+}
 
 function calcularInteresDia(capitalInicial,tasa, periodo){
-  return interes = (capitalInicial*tasa*periodo)/(100*periodo);
- 
+  return interes = (capitalInicial*tasa*periodo)/(100*periodo); 
 }
+
+function cargaInteres(interes){
+  arrInteresGanado.push(interes); //cargo los intereses al array vacio
+}
+
 function interesADevolver(capitalInicial, interes){
      return aDevolver = capitalInicial + interes;
 }
@@ -17,7 +27,8 @@ function mostrarResultado(resultado){
     alert(`Usted debe devolver $:${resultado}`);
 }
 
-
+arrInteresGanado.forEach(interes => console.log(interes)); //muestro el array de Intereses
+arrCapital.forEach(capitalInicial => console.log(capitalInicial)); //muestro el array de Capital Inicial
 
 while(opcionMenu !=5){
     
