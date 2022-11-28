@@ -20,12 +20,25 @@ function interesADevolver(capitalInicial, interes){
 }
 
 function mensajeDespedida(){
-    alert("Adios!")
+    Swal.fire({
+        title: 'Adios!',
+        text: 'Gracias por usar nuestro software',
+        icon: 'cool',
+        confirmButtonText: 'Cerrar'
+    })//alert("Adios!")
 }
 
 function mostrarResultado(resultado){
     alert(`Usted debe devolver $:${resultado}`);
 }
+
+function aplicaJson(){
+    const enJSON = '("id:1";"interes"=interes)';
+    const interesesGanadosJSON = JSON.parse(enJSON);
+    console.log(typeof enJSON);
+}
+
+
 
 arrInteresGanado.forEach(interes => console.log(interes)); //muestro el array de Intereses
 arrCapital.forEach(capitalInicial => console.log(capitalInicial)); //muestro el array de Capital Inicial

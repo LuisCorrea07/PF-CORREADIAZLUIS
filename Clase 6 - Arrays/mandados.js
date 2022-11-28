@@ -19,6 +19,9 @@
 // });
 
 
+const porDos = numeros.map(x => x*2);
+
+
 class Producto{
     constructor(nombre, precio){
         this.nombre = nombre.toUpperCase();

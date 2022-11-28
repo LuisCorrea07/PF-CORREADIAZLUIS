@@ -41,3 +41,8 @@ const resultado = cursos.filter((el) => el.nombre.includes('JS'));
 const resultado2 = cursos.filter((el) => el.precio<14000);
 
 console.log(resultado);
+
+
+//Funcion de flecha
+const suma = (a,b) => {return a+b};
+
