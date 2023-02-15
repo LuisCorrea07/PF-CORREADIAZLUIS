@@ -1,0 +1,42 @@
+body{
+    background-color: black;
+}
+
+h1{
+    color: #97eadd;
+    text-align: center;
+    font-family:'Billionstar', Courier, monospace;
+}
+
+.container-fluid{
+    background-color: black;
+}
+.navbar{
+    font-family:'Ravie Normal';
+    text-align: center;
+    background-color:antiquewhite
+}
+
+table span{
+    color: white;
+    /* font-weight: bold; */
+    font-family: 'Fredoka One';
+}
+
+img{
+    width: 200px;
+    height: 200px;
+}
+
+
+table{
+    border-collapse: separate;
+    table-layout:auto;
+    overflow-x: auto;
+}
+
+
+
+
+
+/* El id se coloca con un # */
