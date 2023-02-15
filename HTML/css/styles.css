@@ -29,13 +29,18 @@ img{
     text-align: center;
 }
 
-
-table{
-    border-collapse: separate;
-    table-layout:auto;
-    overflow-x: auto;
+.table{
+    align-self:auto;
+    text-align: center;
+    width: fit-content;
 }
 
+
+.container{
+    background-color: black;
+    color:#97eadd;
+    font-weight: bold;
+}
 
 
 
