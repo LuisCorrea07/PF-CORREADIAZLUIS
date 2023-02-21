@@ -55,8 +55,8 @@ nav ul li{
 }
 
 nav ul li a{
-text-decoration: none;
-font-weight: bold;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 nav ul li a::before{
@@ -91,7 +91,7 @@ img{
 }
 
 
-table{
+.table{
     border-collapse: separate;
     table-layout:auto;
     overflow-x: auto;
@@ -108,10 +108,30 @@ table{
 .barraInicioProductos{
     padding-left: 10px;
 }
-.busqueda{
+
+.busqueda input{
+    color: black;
     padding: 0 10px 0;
 }
 
-div ul{
+.categorias{ /* revisar el codigo aqui*/
     list-style: none;
+    text-decoration: none;
+}
+
+.categorias ul li{
+    color: white;
+    text-decoration: none;
+}
+
+
+.tablaProductos{
+    border-collapse: separate;
+    border-spacing: 50px;
+    margin-left: 30%;
+    
+}
+
+.tablaProductos tr td span{
+    text-align: center;
 }
