@@ -1,3 +1,11 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color:white;
+}
+
+
 body{
     background-color: black;
 }
@@ -5,22 +13,70 @@ body{
 h1{
     color: #97eadd;
     text-align: center;
-    font-family:'Billionstar', Courier, monospace;
+    font-family: 'Lobster', 'Lucida Sans', 'Lucida Sans Regular';
+    letter-spacing: 5px;
 }
 
 .container-fluid{
     background-color: black;
 }
-.navbar{
-    font-family:'Ravie Normal';
-    text-align: center;
-    background-color:antiquewhite
+
+#logo_bomyiya{
+    width: 70px;
+    height: 70px;
+    float: left;
+    padding: 8px;
 }
+
+header{
+    background-color:antiquewhite;
+    width: 100%;
+    clear:both;
+    content: '';
+    display: table;
+}
+
+.menu{
+    width: 900px;
+    margin: 0 auto;
+    text-align: center;
+
+}
+nav{
+    float: right;
+}
+
+nav ul li{
+    list-style: none;
+    margin-left: 75px;
+    padding: 12px 0;
+    float:left;
+    position: relative;
+}
+
+nav ul li a{
+text-decoration: none;
+font-weight: bold;
+}
+
+nav ul li a::before{
+    display: block;
+    content: '';
+    width: 0%;
+    background-color: #444;
+    height: 5px;
+    top:0;
+    position: absolute;
+    transition: width 0.2s;
+}
+
+nav ul li a:hover::before{
+    width:100%;
+}
+
 
 table span{
     color: white;
-    /* font-weight: bold; */
-    font-family: 'Fredoka One';
 }
 
 img{
@@ -34,10 +90,40 @@ table{
     border-collapse: separate;
     table-layout:auto;
     overflow-x: auto;
+    padding-left: 300px;
+    border-style: none;
+}
+
+.categoriaPrincipal{
+    color:white;
+    /* padding-top: 400px; */
+
+}
+
+footer{
+    color:white;
+}
+
+.formContacto{
+    color: white;
 }
 
 
-
-
+#seguridad{
+    width: auto;
+    padding: 0 250px;
+}
 
 /* El id se coloca con un # */
+
+/*Pagina Productos*/
+.barraInicioProductos{
+    padding-left: 10px;
+}
+.busqueda{
+    padding: 0 10px 0;
+}
+
+div ul{
+    list-style: none;
+}
