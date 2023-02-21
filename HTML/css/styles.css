@@ -85,29 +85,18 @@ img{
     text-align: center;
 }
 
+.table{
+    align-self:auto;
+    text-align: center;
+    width: fit-content;
+}
+
 
 table{
     border-collapse: separate;
     table-layout:auto;
     overflow-x: auto;
-    padding-left: 300px;
-    border-style: none;
 }
-
-.categoriaPrincipal{
-    color:white;
-    /* padding-top: 400px; */
-
-}
-
-footer{
-    color:white;
-}
-
-.formContacto{
-    color: white;
-}
-
 
 #seguridad{
     width: auto;
