@@ -135,3 +135,28 @@ img{
 .tablaProductos tr td span{
     text-align: center;
 }
+
+/*Contactos*/
+.flex-container{
+    display: flex;
+    gap: 50px;
+}
+
+.flex-container .flex-item{
+
+}
+.flex-container .flex-item .imagen_chat{
+    margin-top: 300;
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    justify-content: left;
+
+
+}
+
+#instagram{
+    color:white;
+    width: 30px;
+    height: 30px;
+}
