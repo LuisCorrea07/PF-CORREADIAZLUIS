@@ -2,11 +2,11 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  color: white;
-  /* outline: 1px solid red; */
+  /* color: white; */
+  outline: 1px solid red;
 }
 
-body {
+body{
   background-color: black;
 }
 
@@ -34,6 +34,10 @@ header {
   clear: both;
   content: "";
   display: table;
+}
+
+.categoriaPrincipal{
+  color:white;
 }
 
 .menu {
@@ -85,6 +89,9 @@ img {
   text-align: center;
 }
 
+footer{
+  text-align: end;
+}
 .table {
   /* align-self:auto;
     text-align: center;
