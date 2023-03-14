@@ -1,162 +1,254 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    color:white;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: white;
+  /* outline: 1px solid red; */
 }
 
-
-body{
-    background-color: black;
+body {
+  background-color: black;
 }
 
-h1{
-    color: #97eadd;
+h1 {
+  color: #97eadd;
+  text-align: center;
+  font-family: "Lobster", "Lucida Sans", "Lucida Sans Regular";
+  letter-spacing: 5px;
+}
+
+.container-fluid {
+  background-color: black;
+}
+
+#logo_bomyiya {
+  width: 70px;
+  height: 70px;
+  float: left;
+  padding: 8px;
+}
+
+header {
+  background-color: antiquewhite;
+  width: 100%;
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.menu {
+  width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+nav ul li {
+  list-style: none;
+  margin-left: 75px;
+  padding: 12px 0;
+  float: left;
+  position: relative;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a::before {
+  display: block;
+  content: "";
+  width: 0%;
+  background-color: #444;
+  height: 5px;
+  top: 0;
+  position: absolute;
+  transition: width 0.2s;
+}
+
+nav ul li a:hover::before {
+  width: 100%;
+}
+
+table span {
+  color: white;
+}
+
+img {
+  width: 200px;
+  height: 200px;
+  text-align: center;
+}
+
+.table {
+  /* align-self:auto;
     text-align: center;
-    font-family: 'Lobster', 'Lucida Sans', 'Lucida Sans Regular';
-    letter-spacing: 5px;
-}
-
-.container-fluid{
-    background-color: black;
-}
-
-#logo_bomyiya{
-    width: 70px;
-    height: 70px;
-    float: left;
-    padding: 8px;
-}
-
-header{
-    background-color:antiquewhite;
-    width: 100%;
-    clear:both;
-    content: '';
-    display: table;
-}
-
-.menu{
-    width: 900px;
-    margin: 0 auto;
-    text-align: center;
-
-}
-nav{
-    float: right;
-}
-
-nav ul li{
-    list-style: none;
-    margin-left: 75px;
-    padding: 12px 0;
-    float:left;
-    position: relative;
-}
-
-nav ul li a{
-    text-decoration: none;
-    font-weight: bold;
-}
-
-nav ul li a::before{
-    display: block;
-    content: '';
-    width: 0%;
-    background-color: #444;
-    height: 5px;
-    top:0;
-    position: absolute;
-    transition: width 0.2s;
-}
-
-nav ul li a:hover::before{
-    width:100%;
-}
-
-
-table span{
-    color: white;
-}
-
-img{
-    width: 200px;
-    height: 200px;
-    text-align: center;
-}
-
-.table{
-    align-self:auto;
-    text-align: center;
-}
-
-
-.table{
     border-collapse: separate;
     table-layout:auto;
-    overflow-x: auto;
+    overflow-x: auto; */
+  display: flex;
+  flex-flow: row wrap;
+  margin-left: 300px;
 }
 
-#seguridad{
-    width: auto;
-    padding: 0 250px;
+#seguridad {
+  width: auto;
+  padding: 0 250px;
 }
 
 /* El id se coloca con un # */
 
-/*Pagina Productos*/
-.barraInicioProductos{
-    padding-left: 10px;
+/*Productos*/
+
+.barraInicioProductos {
+  padding-left: 10px;
 }
 
-.busqueda input{
-    color: black;
-    padding: 0 10px 0;
+.container-fluid .d-flex{
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
-.categorias{ /* revisar el codigo aqui*/
-    list-style: none;
-    text-decoration: none;
-}
 
-.categorias ul li{
+/* .busqueda input {
+  color: black;
+  padding: 0px 10px;
+  margin-left: 10px;
+} */
+
+
+
+.grid-container-productos{
+    display: grid;
+    gap: 100px;
+    margin: 10px;
+    grid-template-columns: 0.25fr 1fr;
+    align-items: center;
     color: white;
-    text-decoration: none;
+
+}
+/* .grid-container-productos .categorias{
+    margin-left: 10px;
+    padding: 0px;
+    
+} */
+
+
+.categorias{
+  text-align: justify;
+  align-self: self-start;
+  margin-top: 20px;
+  margin-left: 20px;
 }
 
 
-.tablaProductos{
-    border-collapse: separate;
-    border-spacing: 50px;
-    margin-left: 30%;
+.grid-container-productos ul{
+    list-style: none;
+    padding:10px;
+}
+
+.ul-categorias a{
+  
+  color:white;
+  text-decoration: none;
+}
+
+.grid-container-productos .productos-principal{
+  margin-right: 100px;
+}
+
+.grid-container-productos .productos-principal .fotos{
+ display: flex;
+ flex-direction: row;
+ padding: 10px 0 10px 0;
+}
+
+.grid-container-productos .productos-principal .fotos img{
+  width: 300px;
+  height: 300px;
+  padding: 50px;
+  margin-left: 50px;
+  align-self: center;
+}
+
+.detalle-producto{
+  color: white;
+  margin: 5px;
+  align-self: center;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+
+
+
+
+
+/*Contactos*/
+.body-contacto{
+    background-image: url(../img/tren-de-las-nubes.jpg);
+    width: 100%;
+    height: auto;
+    font-family: "Lobster", "Lucida Sans", "Lucida Sans Regular";
+}
+.grid-container {
+  display: grid;
+  gap: 50px;
+  margin: 10px;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+.title-contacto{
+    padding:20px 0 50px 0;
     
 }
-
-.tablaProductos tr td span{
+.redes #instagram{
+    width:  25px;
+    height: 25px;
+    margin-left: 10px;
+    margin-top: 5px;
     text-align: center;
 }
 
-/*Contactos*/
-.flex-container{
-    display: flex;
-    gap: 50px;
+.redes a{
+    text-decoration: none;
+    color: white;
+    margin: 10px;
 }
 
-.flex-container .flex-item{
-
-}
-.flex-container .flex-item .imagen_chat{
-    margin-top: 300;
-    width: 100%;
-    height: auto;
-    flex-direction: row;
-    justify-content: left;
-
-
+.redes p{
+    margin: 30px;
+    padding-top: 40px;
+    text-align: justify;
 }
 
-#instagram{
-    color:white;
-    width: 30px;
-    height: 30px;
+.redes iframe{
+    margin: 20px
 }
+
+.grid-form{
+    align-items: justify;
+}
+#nombre{
+  padding-right: 100px;
+}
+#apellido{
+  padding-right: 100px;
+}
+#email{
+  padding-right: 150px;
+}
+#mensaje{
+  padding-right: 150px;
+}
+
+.enviar{
+    background-color: tomato;
+    width: 50%;
+    margin-left: 70px;
+};
