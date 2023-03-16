@@ -199,9 +199,16 @@ footer{
   align-content: center;
 }
 
+.carousel{
+  margin-top: 50px;
+  height: 400px;
+  padding: 20px 300px 0px 300px ;
+  margin-left: 50px;
+}
 
+.carousel img{
 
-
+}
 
 
 
