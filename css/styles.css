@@ -114,13 +114,8 @@ footer{
 
 .barraInicioProductos {
   padding-left: 10px;
+  color:white;
 }
-
-.container-fluid .d-flex{
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
 
 /* .busqueda input {
   color: black;
