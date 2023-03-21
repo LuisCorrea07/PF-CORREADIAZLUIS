@@ -2,8 +2,8 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  /* color: white; */
-  /* outline: 1px solid red; */
+  color: white; 
+  outline: 1px solid red;
 }
 
 body{
@@ -274,3 +274,5 @@ footer{
     width: 50%;
     margin-left: 70px;
 };
+
+
