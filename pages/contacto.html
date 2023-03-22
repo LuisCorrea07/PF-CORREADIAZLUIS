@@ -11,11 +11,64 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="../css/styles.css" />
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!-- ANIMATE CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
     <title>Contacto</title>
   </head>
+  
+  
+  
   <body class="body-contacto">
     <header>
-      <div class="menu">
+      <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+          <div class="container-fluid" id="container-navbar">
+            <!-- icono o nombre -->
+
+          <img
+             src="../img/logo_bomyiyas.jpg"
+             alt="bomyiyas logo"
+             id="logo_bomyiya"
+           />
+            
+             <!-- boton del menu -->
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+             <span class="navbar-toggler-icon"></span>
+           </button>
+
+              <!-- elementos del menu colapsable -->
+
+           <div class="collapse navbar-collapse" id="menu">
+              <ul class="navbar-nav me-auto">
+                 <li class="nav-item">
+                     <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                 </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./nosotros.html">Nosotros</a>
+                 </li>
+                 <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="./productos.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Productos</a>
+                <ul class="dropdown-menu bg-secondary" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Termos</a></li>
+                  <li><a class="dropdown-item" href="#">Mates</a><li>   
+                  <li><a class="dropdown-item" href="#">Accesorios</a></li>
+                </ul>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="./promociones.html">Promociones</a>
+                </li>
+              </ul>
+
+              <hr class="d-md-none text-white-50">         
+            </div>
+          </div>  
+      </nav>
+      <!--  <div class="menu">
         <img
           src="../img/logo_bomyiyas.jpg"
           alt="bomyiyas logo"
@@ -34,10 +87,68 @@
             </li>
           </ul>
         </nav>
-      </div>
+      </div> -->
     </header>
 
-    <h1 class="title-contacto">Contactanos</h1>
+    <div class="content">
+
+      <h1 class="logo">Contáctanos</h1>
+
+      <div class="contact-wrapper animated bounceInUp">
+          <div class="contact-form">
+              <h3>Contacto</h3>
+              <form action="">
+                  <p>
+                      <label>Nombre</label>
+                      <input type="text" name="fullname" placeholder="Nombre">
+                  </p>
+                  <p>
+                      <label>Email</label>
+                      <input type="email" name="email" placeholder="Email">
+                  </p>
+                  <p>
+                      <label>Telefono</label>
+                      <input type="tel" name="phone" placeholder="Telefono">
+                  </p>
+                  <p class="block">
+                     <label>Mensaje</label> 
+                      <textarea name="message" rows="3" placeholder="Tu mensaje aqui"></textarea>
+                  </p>
+                  <p class="block">
+                      <button>Enviar</button>
+                  </p>
+              </form>
+          </div>
+          <div class="contact-info">
+              <h4>Más Informacion</h4>
+              <ul>
+                  <li><img
+                      src="../img/instagram.svg"
+                      alt="logotipo de instagram"
+                      id="instagram"
+                    />  <a href="#" title="">Seguinos en nuestro Instagram</a>
+                  </li>
+                  <li><i class="fas fa-map-marker-alt"></i> Caseros 434</li>
+                  <li><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3622.16180507273!2d-65.41077988467298!3d-24.789912384087277!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941bc3a3372f52ed%3A0x5ee997fe8d40c6e8!2sCaseros%20434%2C%20A4400%20Salta!5e0!3m2!1ses-419!2sar!4v1678321395939!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></li>
+              </ul>
+          </div>
+      </div>
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <h1 class="title-contacto">Contactanos</h1>
 
     <div class="grid-container">
       <div class="redes">
@@ -82,12 +193,7 @@
           <input type="submit" class="btn btn-success enviar" value="Enviar" />
         </form>
       </div>
-    </div>
-
-
-
-
-
+    </div> -->
 
   </body>
 </html>
