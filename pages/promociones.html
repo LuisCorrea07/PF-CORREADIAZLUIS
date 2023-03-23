@@ -16,24 +16,75 @@
 
   <body>
     <header>
-      <div class="menu">
-        <img
-          src="../img/logo_bomyiyas.jpg"
-          alt="bomyiyas logo"
-          id="logo_bomyiya"
-        />
-        <nav>
-          <ul>
-            <li><a href="../index.html">Inicio</a></li>
-            <li>
-              <a href="nosotros.html">Nosotros</a>
-            </li>
-            <li><a href="productos.html">Productos</a></li>
-            <li><a href="promociones.html">Promociones</a></li>
-            <li>
-              <a href="contacto.html" target="_blank">Contacto</a>
-            </li>
-          </ul>
+      <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <div class="container-fluid" id="container-navbar">
+          <!-- icono o nombre -->
+  
+          <img
+            src="../img/logo_bomyiyas.jpg"
+            alt="bomyiyas logo"
+            id="logo_bomyiya"
+          />
+  
+          <!-- boton del menu -->
+  
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#menu"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+  
+          <!-- elementos del menu colapsable -->
+  
+          <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="../index.html"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./nosotros.html">Nosotros</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="./productos.html"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Productos</a
+                >
+                <ul
+                  class="dropdown-menu bg-secondary"
+                  aria-labelledby="navbarDropdown"
+                >
+                  <li><a class="dropdown-item" href="#">Termos</a></li>
+                  <li><a class="dropdown-item" href="#">Mates</a></li>
+                  <li></li>
+                  <li><a class="dropdown-item" href="#">Accesorios</a></li>
+                </ul>
+              </li>
+  
+              <li class="nav-item">
+                 <a class="nav-link" href="./contacto.html">Contacto</a>
+               </li>
+            </ul>
+  
+            <hr class="d-md-none text-white-50" />
+          </div>
+        </div>
         </nav>
       </div>
     </header>

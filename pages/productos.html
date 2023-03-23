@@ -17,24 +17,56 @@
 
   <body>
     <header>
-      <div class="menu">
-        <img
-          src="../img/logo_bomyiyas.jpg"
-          alt="bomyiyas logo"
-          id="logo_bomyiya"
-        />
-        <nav>
-          <ul>
-            <li><a href="../index.html">Inicio</a></li>
-            <li>
-              <a href="/pages/nosotros.html" target="_blank">Nosotros</a>
-            </li>
-            <li><a href="/pages/productos.html">Productos</a></li>
-            <li><a href="/pages/promociones.html">Promociones</a></li>
-            <li>
-              <a href="/pages/contacto.html" target="_blank">Contacto</a>
-            </li>
-          </ul>
+      <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <div class="container-fluid" id="container-navbar">
+          <!-- icono o nombre -->
+  
+          <img
+            src="../img/logo_bomyiyas.jpg"
+            alt="bomyiyas logo"
+            id="logo_bomyiya"
+          />
+  
+          <!-- boton del menu -->
+  
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#menu"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+  
+          <!-- elementos del menu colapsable -->
+  
+          <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="../index.html"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./nosotros.html">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./promociones.html">Promociones</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contacto.html">Contacto</a>
+              </li>
+            </ul>
+  
+            <hr class="d-md-none text-white-50" />
+          </div>
+        </div>
         </nav>
       </div>
     </header>
