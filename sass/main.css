@@ -3,7 +3,7 @@
   margin: 0;
   box-sizing: border-box;
   color: white;
-  /* outline: 1px solid red;*/
+/*   outline: 1px solid red; */
 }
 
 body {
@@ -403,4 +403,61 @@ footer {
     opacity: 1;
     transform: translateY(0);
   }
-}/*# sourceMappingURL=main.css.map */
+}
+
+.titulo-animado {
+  animation: slideLeft 2s ease-in-out;
+  animation-fill-mode: forwards;
+}
+@keyframes slideLeft {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.container-estilo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-top: 50px;
+  /* justify-content: center; */
+}
+.container-estilo .titulo-estilo {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.container-estilo .image-estilo {
+  display: flex;
+  margin-top: 25px;
+}
+.container-estilo .image-estilo .imagen-estilo img {
+  max-width: 100%;
+}
+.imagen-estilo{
+  padding-left: 50px;
+}
+.titulo-estilo-mateArtesanal{
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 1rem;
+  padding-left: 50px;
+}
+
+.img-envio{
+ width: 700px;
+ height: 290px;
+ margin: 10% 0 0 25%;
+}
+
+.footer-nosotros{
+  margin-top: 200px;
+}
+
+
+/*# sourceMappingURL=main.css.map */
