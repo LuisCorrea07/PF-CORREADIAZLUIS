@@ -3,7 +3,7 @@
   margin: 0;
   box-sizing: border-box;
   color: white;
-/*   outline: 1px solid red; */
+  /* outline: 1px solid red;*/
 }
 
 body {
@@ -140,16 +140,16 @@ footer {
   font-size: 20px;
   text-align: center;
 }
-.colum2 .row {
+.colum2 .rowf {
   margin-top: 20px;
   display: flex;
 }
-.colum2 .row img {
+.colum2 .rowf img {
   width: 35px;
   height: 36px;
 }
 
-.row label {
+.rowf label {
   margin-top: 10px;
   margin-left: 20px;
   color: #c7c7c7;
@@ -162,28 +162,28 @@ footer {
   font-size: 22px;
 }
 
-.row2 {
+.row2f {
   margin-top: 20px;
   display: flex;
 }
-.row2 img {
+.row2f img {
   width: 36px;
   height: 36px;
 }
 
-.row label {
+.rowf label {
   margin-top: 10px;
   margin-left: 20px;
   max-width: 150px;
 }
 
-.row3 img {
+.row3f img {
   width: 36px;
   height: 36px;
   padding-bottom: 5px;
 }
 
-.row4 img {
+.row4f img {
   width: 32px;
   height: 32px;
 }
@@ -424,7 +424,6 @@ footer {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding-top: 50px;
   /* justify-content: center; */
 }
 .container-estilo .titulo-estilo {
@@ -432,32 +431,23 @@ footer {
   text-align: center;
   margin-bottom: 1rem;
 }
-.container-estilo .image-estilo {
+.container-estilo .imagen-estilo {
   display: flex;
+  justify-content: center;
   margin-top: 25px;
-}
-.container-estilo .image-estilo .imagen-estilo img {
-  max-width: 100%;
-}
-.imagen-estilo{
-  padding-left: 50px;
+  margin-left: 25px;
+  margin: 25px 0 0 50px;
 }
 .titulo-estilo-mateArtesanal{
-  font-size: 24px;
-  text-align: center;
-  margin-bottom: 1rem;
-  padding-left: 50px;
+  padding-left: 10px;
+  font-size:24px;
+}
+img.img-envio {
+  width: 100%;
+  height: 400px;
+  padding: 100px 0 20px 0;
 }
 
-.img-envio{
- width: 700px;
- height: 290px;
- margin: 10% 0 0 25%;
-}
-
-.footer-nosotros{
-  margin-top: 200px;
-}
-
-
-/*# sourceMappingURL=main.css.map */
+p.detalle-producto {
+  text-align: justify;
+}/*# sourceMappingURL=main.css.map */
