@@ -110,9 +110,10 @@ footer {
   font-size: 22px;
 }
 .colum1 p {
-  font-size: 14px;
+  font-size: 15px;
   color: #c7c7c7;
   margin-top: 20px;
+  text-align: center;
 }
 
 .colum2 {
@@ -125,6 +126,10 @@ footer {
   font-size: 20px;
   text-align: center;
 }
+.colum2 label a{
+  text-decoration: none;
+}
+
 
 #insta {
   text-decoration: none;
